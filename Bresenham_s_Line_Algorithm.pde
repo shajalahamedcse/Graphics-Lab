@@ -19,12 +19,16 @@ void draw()
   {
     if(p0<0)
     {
-      point(x+1,y);
+      x+=1;
+      point(x,y);
       p0=p0+(2*dely);
+      
     }
     else
     {
-      point(x+1,y+1);
+      x+=1;
+      y+=1;
+      point(x,y);
       p0=p0+(2*dely)-(2*delx);
     }
   }
